@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: whitesmoke;
+    background-color: #12100E;
+    
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.calculator-outer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.calculator-inner {
+    color: black;
+    background-color: slategrey;
+    height: 400px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    'screen     screen     screen     c'
+    'one        two        three      divide'
+    'four       five       six        multiply'
+    'seven      eight      nine       minus'
+    'zero       dot        equals     plus'
+    ;
+}
+
+#screen {
+    grid-area: screen;
+    font-size: 2.2rem;
+    background-color: #C9F0F8;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+#c {
+    grid-area: c;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+
+#dot {
+    grid-area: dot;
+     
+}
+
+#equals {
+    grid-area: equals;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+.button {
+    background-color: crimson;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+}
+
+
+
