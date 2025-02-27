@@ -92,8 +92,16 @@ window.addEventListener('keypress', (e) => {
         e.preventDefault();
 
         let x = eval(screen.value);
+        x = x.replace(/^0+/, '');
         screen.value = x;
 
+    }
+})
+
+window.addEventListener('keyup', (e) => {
+    let keyArr = ['0','1','2','3','4','5','6','7','8','9','0','.','/','+', '-','*'];
+    if (keyArr.includes(e.key)) {
+        screen.value += e.key;
     }
 })
 
